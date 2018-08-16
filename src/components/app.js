@@ -15,9 +15,17 @@ export default class App extends Component {
 		};
 	}
 
+	setLanguage = (e) => {
+		console.log(e.target.value);
+		this.setState({language: e.target.value});
+	}
+
 	render() {
 		return <Fragment>
-			<Header language={this.state.language} />
+			<Header 
+				language={this.state.language} 
+				setLanguage={this.setLanguage}
+			/>
 			<Hero />
 			<Navigation />
 			<Overview />

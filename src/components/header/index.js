@@ -14,7 +14,7 @@ export default function Header({ language, setLanguage }) {
 			<label>
 				Language
 			</label>
-			<span>
+			<span id="languageOptions">
 				<select
 					name="language"
 					value={language}
